@@ -9,5 +9,14 @@ public class Carro {
     //3. nombre del atributo
     //  (camelCase)
     public String placa;
-    public String tipoVehiculo;                                                         
+    public String tipoVehiculo;
+    public Carro() {
+    }
+    public Carro(String placa,
+     String tipoVehiculo) {
+        this.placa = placa;
+        this.tipoVehiculo = tipoVehiculo;
+    }
+    
+    
 }

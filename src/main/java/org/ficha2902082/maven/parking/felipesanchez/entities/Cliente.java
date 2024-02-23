@@ -2,6 +2,7 @@ package org.ficha2902082.maven.parking.felipesanchez.entities;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.ficha2902082.maven.parking.felipesanchez.entities.Carro;;
 
 public class Cliente {
 
@@ -25,9 +26,32 @@ public class Cliente {
 public void addCar ( Carro c ){
     this.misCarros.add(c);
 
+    
+
 }
 
+
+
 //sobrecarga del metodo addCar
+
+public Cliente(String nombre, 
+    String apellidos, 
+    TipoDocumento tipoDocumento, 
+    Long numeroDocumento, 
+    Long celular) {
+    this.nombre = nombre;
+    this.apellidos = apellidos;
+    this.tipoDocumento = tipoDocumento;
+    this.numeroDocumento = numeroDocumento;
+    this.celular = celular;
+    this.misCarros = new ArrayList<Carro>();
+}
+
+
+
+
+public Cliente() {
+}
 
 public void addCar (String placa, String tipoVehiculo){
     //construir(instanciar)
@@ -36,7 +60,10 @@ public void addCar (String placa, String tipoVehiculo){
     c.tipoVehiculo = tipoVehiculo;
     this.misCarros.add(c);
 
+
 }
+
+
 
 //Sobrecarga de metodos: 
 /*

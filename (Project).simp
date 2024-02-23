@@ -9,20 +9,24 @@
     <entity-names>
       <counter>
         <item-type type-id="class" type="Class" />
-        <value>6</value>
+        <value>7</value>
       </counter>
     </entity-names>
     <entity-ids>
       <counter>
         <item-type type-id="class" type="Class" />
-        <value>7</value>
+        <value>8</value>
       </counter>
       <counter>
         <item-type type-id="property" type="Property" />
-        <value>10</value>
+        <value>22</value>
       </counter>
       <counter>
         <item-type type-id="relationship" type="Association" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment" type="Comment" />
         <value>2</value>
       </counter>
     </entity-ids>
@@ -35,12 +39,13 @@
     <fields>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
-        <value>2</value>
+        <value>3</value>
       </counter>
     </fields>
   </counters>
   <alias-groups />
   <management uid="md-d2e1117e28cc4f919bcdc4195ddbce6d" name="" task-id-sequence="0">
+    <working-schedule uid="ws-7b6908d67d76497eb165b1d35283c7be" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
     <persons>
       <person id="">
         <first-name />
@@ -50,6 +55,7 @@
         <phone-number />
         <description />
         <color>#00000000</color>
+        <working-schedule uid="ws-0a0ac6c7d210434fbb29cfc725143884" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
       </person>
     </persons>
     <teams />
@@ -70,6 +76,7 @@
         <type id="enum(TipoDocumento)" name="enum(TipoDocumento)" />
         <type id="Long" name="Long" />
         <type id="enum(tipo Vehiculo)" name="enum(tipo Vehiculo)" />
+        <type id="List&lt;Carros&gt;" name="List&lt;Carros&gt;" />
         <type id="Str" name="Str" />
         <type id="Class:9d1186c5f96e4265a3537bd05c230854" name="Carro" class-ref="9d1186c5f96e4265a3537bd05c230854" />
         <type id="Class:927cff2b323a453a8768d6076ee03cd9" name="Cliente" class-ref="927cff2b323a453a8768d6076ee03cd9" />
@@ -77,12 +84,8 @@
     </custom-types>
   </types>
   <items>
-    <item id="5b21d5e32908476aae7b89231eedd746" cid="PROP008" type="property" owner="cc3005f420e6416386eae798ff87a482" creator="" creation-date="02/15/2024 15:07:15" visibility="private">
-      <structural-feature type="Carro" type-id="Class:9d1186c5f96e4265a3537bd05c230854" />
-      <property aggregation="composite" />
-    </item>
     <item id="c7c48331073b45c9bcad5a4d0ee6589a" cid="PROP003" type="property" name="nombre" owner="927cff2b323a453a8768d6076ee03cd9" creator="" creation-date="02/15/2024 14:26:03" visibility="private">
-      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
         <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
         <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
         <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
@@ -107,7 +110,7 @@
       <structural-feature type="String" type-id="Uml.String" />
     </item>
     <item id="2f784df7e36d41c5a0f0ab5f0d17f261" cid="PROP006" type="property" name="numeroIdentificacion" owner="927cff2b323a453a8768d6076ee03cd9" creator="" creation-date="02/15/2024 14:29:40" visibility="private">
-      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
         <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
         <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
         <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
@@ -129,13 +132,14 @@
           </alternate-style>
         </alternate-styles>
       </style>
-      <structural-feature type="Long" type-id="Long" />
+      <structural-feature type="Carro" type-id="Class:9d1186c5f96e4265a3537bd05c230854" />
     </item>
-    <item id="a256d09e01234a239fb3c253bb731148" cid="PROP009" type="property" owner="cc3005f420e6416386eae798ff87a482" creator="" creation-date="02/15/2024 15:07:15" visibility="private">
+    <item id="48343b834d8f4185ba9486b405c3e5a9" cid="PROP017" type="property" owner="2cc5066895914715a5cdf030786b88e1" creation-date="02/22/2024 13:44:44" visibility="private">
       <structural-feature type="Cliente" type-id="Class:927cff2b323a453a8768d6076ee03cd9" />
+      <property aggregation="shared" />
     </item>
     <item id="95d1c7a9c60745efbc497558f928f361" cid="PROP005" type="property" name="apellidos" owner="927cff2b323a453a8768d6076ee03cd9" creator="" creation-date="02/15/2024 14:29:30" visibility="private">
-      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
         <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
         <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
         <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
@@ -157,10 +161,13 @@
           </alternate-style>
         </alternate-styles>
       </style>
-      <structural-feature type="String" type-id="Uml.String" />
+      <structural-feature type="Carro" type-id="Class:9d1186c5f96e4265a3537bd05c230854" />
+    </item>
+    <item id="84185eff26a54e3f8c39e89fdb2f0c55" cid="PROP018" type="property" owner="2cc5066895914715a5cdf030786b88e1" creation-date="02/22/2024 13:44:44" visibility="private">
+      <structural-feature multiplicity="1..*" type="Carro" type-id="Class:9d1186c5f96e4265a3537bd05c230854" />
     </item>
     <item id="a8c9723cb12d4033b534df7a5a2a6156" cid="PROP004" type="property" name="tipoDocumento" owner="927cff2b323a453a8768d6076ee03cd9" creator="" creation-date="02/15/2024 14:27:33" visibility="private">
-      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
         <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
         <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
         <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
@@ -185,7 +192,7 @@
       <structural-feature type="enum(TipoDocumento)" type-id="enum(TipoDocumento)" />
     </item>
     <item id="7515368f4d9c4aab885f6a2e59ffd9a9" cid="PROP007" type="property" name="celular" owner="927cff2b323a453a8768d6076ee03cd9" creator="" creation-date="02/15/2024 14:30:06" visibility="private">
-      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
         <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
         <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
         <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
@@ -207,7 +214,7 @@
           </alternate-style>
         </alternate-styles>
       </style>
-      <structural-feature type="Long" type-id="Long" />
+      <structural-feature type="BigInteger" type-id="Uml.BigInteger" />
     </item>
   </items>
   <models>
@@ -224,7 +231,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="p72cceb4e6d764b0dbd9cc0e4f2e30d3b_577633357" name="ClassDiagram1" order-index="1" uid="" auto-routed-paths="false" default-line-style="default">
+      <diagram type="uml-class" id="p72cceb4e6d764b0dbd9cc0e4f2e30d3b_577633357" name="ClassDiagram1" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -236,12 +243,12 @@
           </authors>
           <description />
           <creation-date>02/15/2024 13:34:37</creation-date>
-          <change-date>02/15/2024 15:07:16</change-date>
+          <change-date>02/22/2024 13:49:12</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <abstract-items>
-          <item id="9d1186c5f96e4265a3537bd05c230854" cid="C001" type="class" name="Carro" creator="" creation-date="02/15/2024 13:37:14">
+          <item id="9d1186c5f96e4265a3537bd05c230854" cid="C001" type="class" name="Carro" creator="" creation-date="02/15/2024 13:37:14" visibility="undefined">
             <owned-items />
             <attributes>
               <attribute id="a34cbc158d9894cfda1b36c837df7c9ee520" cid="PROP001" name="placa" creation-date="02/15/2024 13:38:33" property-ref="1aef38e542b7498c92f182f82de60c4f" />
@@ -256,6 +263,7 @@
               <attribute id="a4574f2a782c64457bc0a81b2695ab248844" cid="PROP005" name="apellidos" creation-date="02/15/2024 14:29:30" property-ref="95d1c7a9c60745efbc497558f928f361" />
               <attribute id="a7d1207156d1849e69d44ad9f93a95bd0663" cid="PROP006" name="numeroIdentificacion" creation-date="02/15/2024 14:29:40" property-ref="2f784df7e36d41c5a0f0ab5f0d17f261" />
               <attribute id="a6eb51a4ef9b645b3b5176bd9e1ea971a68" cid="PROP007" name="celular" creation-date="02/15/2024 14:30:06" property-ref="7515368f4d9c4aab885f6a2e59ffd9a9" />
+              <attribute id="af83a4bff5d424e0f84005a4f521f645d436" cid="PROP010" name="misCarros" creation-date="02/22/2024 13:36:34" property-ref="18a8d7960fdb4b60a0bf94679a44ab95" />
             </attributes>
             <operations>
               <operation id="ocef1dc7d1d224fd18dd71c1901399eaa798" cid="OP001" name="addCar" creation-date="02/15/2024 15:12:35" type="" type-id="" visibility="undefined" />
@@ -264,17 +272,45 @@
               <source-code language="ActionScript" />
             </source-codes>
           </item>
+          <item id="f4562d4ffe044ab0be7f01a290050290" cid="PROP021" type="property" name="ancho" owner="65b49a2aa8594964b7a56df3b2f6953c" creation-date="02/22/2024 13:52:16" visibility="private">
+            <structural-feature type="BigReal" type-id="Uml.BigReal" />
+          </item>
+          <item id="65b49a2aa8594964b7a56df3b2f6953c" cid="C007" type="class" name="Cupo" creation-date="02/22/2024 13:49:12">
+            <owned-items />
+            <attributes>
+              <attribute id="a075056afc6a147d99ab83371a518eff312" cid="PROP019" name="letra" creation-date="02/22/2024 13:49:22" property-ref="6b45a5165dd34c7983695d9d239696b0" />
+              <attribute id="a2cd4132abed74a0aa17f4f226aadc50c685" cid="PROP020" name="largo" creation-date="02/22/2024 13:51:47" property-ref="cf6c3bb4e579417c8f5140283024ab10" />
+              <attribute id="a546e0ca55a924d6a9896f207f61cd009916" cid="PROP021" name="ancho" creation-date="02/22/2024 13:52:16" property-ref="f4562d4ffe044ab0be7f01a290050290" />
+            </attributes>
+          </item>
           <item id="1aef38e542b7498c92f182f82de60c4f" cid="PROP001" type="property" name="placa" owner="9d1186c5f96e4265a3537bd05c230854" creator="" creation-date="02/15/2024 13:38:33" visibility="private">
             <structural-feature type="String" type-id="Uml.String" />
           </item>
           <item id="58be747d44314f9684eab9e64eb31f5d" cid="PROP002" type="property" name="tipoVehiculo" owner="9d1186c5f96e4265a3537bd05c230854" creator="" creation-date="02/15/2024 13:38:44" visibility="private">
-            <structural-feature type="enum(tipo Vehiculo)" type-id="enum(tipo Vehiculo)" />
+            <structural-feature type="Cliente" type-id="Class:927cff2b323a453a8768d6076ee03cd9" />
           </item>
-          <item id="cc3005f420e6416386eae798ff87a482" cid="REL001" type="relationship" creator="" creation-date="02/15/2024 15:07:15" from="9d1186c5f96e4265a3537bd05c230854" to="927cff2b323a453a8768d6076ee03cd9" visibility="package">
+          <item id="cf6c3bb4e579417c8f5140283024ab10" cid="PROP020" type="property" name="largo" owner="65b49a2aa8594964b7a56df3b2f6953c" creation-date="02/22/2024 13:51:47" visibility="private">
+            <structural-feature type="BigReal" type-id="Uml.BigReal" />
+          </item>
+          <item id="6b45a5165dd34c7983695d9d239696b0" cid="PROP019" type="property" name="letra" owner="65b49a2aa8594964b7a56df3b2f6953c" creation-date="02/22/2024 13:49:22" visibility="private">
+            <structural-feature type="Char" type-id="Uml.Char" />
+          </item>
+          <item id="18a8d7960fdb4b60a0bf94679a44ab95" cid="PROP010" type="property" name="misCarros" owner="927cff2b323a453a8768d6076ee03cd9" creation-date="02/22/2024 13:36:34" visibility="private">
+            <structural-feature type="List&lt;Carros&gt;" type-id="List&lt;Carros&gt;" />
+          </item>
+          <item id="51a0a91c5960418b82b0e455942180c8" cid="CMT001" type="comment" creation-date="02/22/2024 13:40:03">
+            <comment>composición: 
+Relacion de conjunto: el rombo se pone del lado del conjunto 
+
+Rombo blanco: (Agregación): Si se elimina el conjunto, los elementos del conjunto no se eliminan(son independientes existencialmente) y pueden pasar a ser parte de otros conjuntos
+
+Rombo negro(Composición) Si se elimina el conjunto, las partes se eliminan junto con el conjunto </comment>
+          </item>
+          <item id="2cc5066895914715a5cdf030786b88e1" cid="REL005" type="relationship" creation-date="02/22/2024 13:44:44" from="927cff2b323a453a8768d6076ee03cd9" to="9d1186c5f96e4265a3537bd05c230854" visibility="package">
             <owned-items />
-            <relation from="9d1186c5f96e4265a3537bd05c230854" to="927cff2b323a453a8768d6076ee03cd9" derived="false">
-              <start-role id="umlar-eba8683c-5bd3-4b0c-945d-11953359103c" name="" navigability="" association-type="composition" visibility="private" property-ref="5b21d5e32908476aae7b89231eedd746" />
-              <end-role id="umlar-df33f25c-1304-4123-8ee1-e2d246e8e655" name="" navigability="" association-type="association" visibility="private" property-ref="a256d09e01234a239fb3c253bb731148" />
+            <relation from="927cff2b323a453a8768d6076ee03cd9" to="9d1186c5f96e4265a3537bd05c230854" derived="false">
+              <start-role id="umlar-f8b69faf-7e6b-49ee-bad1-44ed12c6a12f" name="" navigability="" association-type="aggregation" visibility="private" attribute-ref="a7d1207156d1849e69d44ad9f93a95bd0663" property-ref="48343b834d8f4185ba9486b405c3e5a9" />
+              <end-role id="umlar-977ba119-f698-4953-bede-50a5afcea2a9" name="" navigability="" association-type="association" visibility="private" attribute-ref="af25436652e1f4a6b8add7e86fab693d2923" property-ref="84185eff26a54e3f8c39e89fdb2f0c55" />
             </relation>
           </item>
         </abstract-items>
@@ -285,18 +321,26 @@
             <class />
           </item>
           <item id="927cff2b323a453a8768d6076ee03cd9" iid="c6c42ef914634f019bc601ff23cb64ab" show-fields="true" creation-date="02/15/2024 13:37:24" order-index="1" type="entity">
-            <layout ax="530" ay="135" awidth="257" aheight="160" x="530" y="135" width="140" height="160" />
+            <layout ax="751" ay="107" awidth="257" aheight="193" x="751" y="107" width="140" height="160" />
             <classifier />
             <class />
           </item>
-          <item id="cc3005f420e6416386eae798ff87a482" iid="0c86166a19d848d29777c420dfc0cf48" creation-date="02/15/2024 15:07:15" order-index="2" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="414" y1="215" x2="530" y2="215" start-border-pos="0.375" end-border-pos="0.875" start-local-pos="80" end-local-pos="80" name-position="0,20">
+          <item id="51a0a91c5960418b82b0e455942180c8" iid="ff757c67a5c5401ea6a98f939a56c303" creation-date="02/22/2024 13:40:03" order-index="3" type="entity">
+            <layout ax="288" ay="391" awidth="330" aheight="214" x="288" y="391" width="330" height="127" rotation-center="-15,0" />
+          </item>
+          <item id="2cc5066895914715a5cdf030786b88e1" iid="3ca0e47401c94212b54784de4a41d8cd" creation-date="02/22/2024 13:44:44" order-index="4" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="true" auto-path="" x1="751" y1="204" x2="414" y2="204" start-border-pos="0.873704663212435" end-border-pos="0.35703125" start-local-pos="97" end-local-pos="69" name-position="0,20">
               <points>
-                <point x="414" y="215" />
-                <point x="530" y="215" />
+                <point x="751" y="204" />
+                <point x="414" y="204" />
               </points>
             </layout>
-            <relation from="9d1186c5f96e4265a3537bd05c230854" from-iid="fd2bab77abbe4526b02e9034ad1231ac" to="927cff2b323a453a8768d6076ee03cd9" to-iid="c6c42ef914634f019bc601ff23cb64ab" />
+            <relation from="927cff2b323a453a8768d6076ee03cd9" from-iid="c6c42ef914634f019bc601ff23cb64ab" from-field="a7d1207156d1849e69d44ad9f93a95bd0663" to="9d1186c5f96e4265a3537bd05c230854" to-iid="fd2bab77abbe4526b02e9034ad1231ac" to-field="af25436652e1f4a6b8add7e86fab693d2923" />
+          </item>
+          <item id="65b49a2aa8594964b7a56df3b2f6953c" iid="6d3321022efc47ad842653f49614d4d7" show-fields="true" creation-date="02/22/2024 13:49:12" order-index="5" type="entity">
+            <layout ax="795" ay="371" awidth="140" aheight="160" x="795" y="371" width="140" height="160" />
+            <classifier />
+            <class />
           </item>
         </layer>
       </diagram>
