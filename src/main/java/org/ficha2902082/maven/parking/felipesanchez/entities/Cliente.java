@@ -2,7 +2,7 @@ package org.ficha2902082.maven.parking.felipesanchez.entities;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.ficha2902082.maven.parking.felipesanchez.entities.Carro;;
+import org.ficha2902082.maven.parking.felipesanchez.entities.Carro;
 
 public class Cliente {
 

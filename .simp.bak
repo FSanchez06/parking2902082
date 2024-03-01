@@ -9,21 +9,21 @@
     <entity-names>
       <counter>
         <item-type type-id="class" type="Class" />
-        <value>4</value>
+        <value>6</value>
       </counter>
     </entity-names>
     <entity-ids>
       <counter>
         <item-type type-id="class" type="Class" />
-        <value>5</value>
+        <value>7</value>
       </counter>
       <counter>
         <item-type type-id="property" type="Property" />
-        <value>35</value>
+        <value>39</value>
       </counter>
       <counter>
         <item-type type-id="relationship" type="Association" />
-        <value>8</value>
+        <value>9</value>
       </counter>
       <counter>
         <item-type type-id="comment" type="Comment" />
@@ -77,11 +77,13 @@
     <custom-types>
       <parameters />
       <types>
+        <type id="long" name="long" />
         <type id="List&lt;Carro&gt;" name="List&lt;Carro&gt;" />
-        <type id="Class:6cc139d42885419d9bf22a2527c051db" name="Registro" class-ref="6cc139d42885419d9bf22a2527c051db" />
+        <type id="Class:b800591e508e45a987f4a3200ed0e3ba" name="Empleado" class-ref="b800591e508e45a987f4a3200ed0e3ba" />
         <type id="Date" name="Date" />
-        <type id="Class:7be77bc823824e2bb304d036557f23b6" name="Cupo" class-ref="7be77bc823824e2bb304d036557f23b6" />
+        <type id="Class:6cc139d42885419d9bf22a2527c051db" name="Registro" class-ref="6cc139d42885419d9bf22a2527c051db" />
         <type id="Class:40282e8979a948e7b421727aa62bc561" name="Cliente" class-ref="40282e8979a948e7b421727aa62bc561" />
+        <type id="Class:7be77bc823824e2bb304d036557f23b6" name="Cupo" class-ref="7be77bc823824e2bb304d036557f23b6" />
         <type id="Time" name="Time" />
         <type id="Class:5aa06b36051f488b9d479b7faa9c8480" name="Carro" class-ref="5aa06b36051f488b9d479b7faa9c8480" />
       </types>
@@ -191,6 +193,12 @@
         </alternate-styles>
       </style>
     </item>
+    <item id="a2f2ad857fe64f43831889501a32f244" cid="PROP038" type="property" name="Es creado por" owner="0476ffc1b4024a5ca911160f7e38da07" creation-date="02/29/2024 14:34:44" visibility="private">
+      <structural-feature multiplicity="*" type="Registro" type-id="Class:6cc139d42885419d9bf22a2527c051db" />
+    </item>
+    <item id="86fcc96ae863494b8b793f74b9426fec" cid="PROP037" type="property" name="guarda" owner="0476ffc1b4024a5ca911160f7e38da07" creation-date="02/29/2024 14:34:44" visibility="private">
+      <structural-feature multiplicity="1" type="Empleado" type-id="Class:b800591e508e45a987f4a3200ed0e3ba" />
+    </item>
     <item id="b71235b25b754f4db5367dc7b318ea4b" cid="PROP032" type="property" name="comprende a" owner="73dee6d162874c669d3592eed8d8af00" creation-date="02/22/2024 14:02:00" visibility="private">
       <structural-feature multiplicity="0..*" type="Registro" type-id="Class:6cc139d42885419d9bf22a2527c051db" />
     </item>
@@ -273,7 +281,7 @@
       </style>
     </item>
     <item id="14a32d7788d44e249726ebb53fb5661b" cid="PROP017" type="property" owner="5a2f6e3dc2604df7aa9fbdab3bfd289a" creator="" creation-date="02/22/2024 13:45:56" visibility="private">
-      <structural-feature type="Cliente" type-id="Class:40282e8979a948e7b421727aa62bc561" />
+      <structural-feature multiplicity="tiene" type="Cliente" type-id="Class:40282e8979a948e7b421727aa62bc561" />
       <property aggregation="shared" />
     </item>
   </items>
@@ -303,20 +311,59 @@
           </authors>
           <description />
           <creation-date>02/22/2024 13:33:04</creation-date>
-          <change-date>02/22/2024 14:13:00</change-date>
+          <change-date>02/29/2024 14:34:44</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <abstract-items>
-          <item id="73dee6d162874c669d3592eed8d8af00" cid="REL006" type="relationship" creation-date="02/22/2024 14:02:00" from="7be77bc823824e2bb304d036557f23b6" to="6cc139d42885419d9bf22a2527c051db" visibility="package">
+          <item id="e577750394f94056948d4fd2c666c19e" cid="CMT003" type="comment" creation-date="02/22/2024 14:06:08">
+            <comment>Rol de clases (asociacion)
+-Frase verbal
+-en tiempo presente
+-minusculas
+-tiene maximo 3 palabras
+Sirve para especificar el papel en la entidad en la relacion binaria
+</comment>
+          </item>
+          <item id="7be77bc823824e2bb304d036557f23b6" cid="C003" type="class" name="Cupo" creator="" creation-date="02/22/2024 13:50:05" visibility="undefined">
             <owned-items />
-            <relation from="7be77bc823824e2bb304d036557f23b6" to="6cc139d42885419d9bf22a2527c051db" derived="false">
-              <start-role id="umlar-3ed2e020-4f66-42e4-9fa1-729260001506" name="" navigability="" association-type="association" visibility="private" property-ref="22d3b69dc8b14edda0597296e2b66ee3" />
-              <end-role id="umlar-34883641-d8a7-400f-8c17-b9003ea03bc3" name="" navigability="" association-type="association" visibility="private" property-ref="b71235b25b754f4db5367dc7b318ea4b" />
+            <attributes>
+              <attribute id="a6e20f32f0c97423daf31c90319e16d9a431" cid="PROP020" name="letra:Char" creation-date="02/22/2024 13:50:32" property-ref="a9a0933d2f554783b0606c064bef51b1" />
+              <attribute id="a61afe1c0bb5b4908b4ab3658bfa00f9c239" cid="PROP022" name="largo" creation-date="02/22/2024 13:50:50" property-ref="b0df3f7a31d040dcb2598def6d6cdc55" />
+              <attribute id="a6ec7f1fd815f4c8b855e43b05db1bf84928" cid="PROP023" name="ancho" creation-date="02/22/2024 13:53:20" property-ref="f1b0c8e672f0470da9660ebb3d1db587" />
+            </attributes>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="5d74d380e1a24f78977a5ddef91b1493" cid="PROP010" type="property" name="misCarros" owner="40282e8979a948e7b421727aa62bc561" creator="" creation-date="02/22/2024 13:37:32" visibility="private">
+            <structural-feature type="List&lt;Carro&gt;" type-id="List&lt;Carro&gt;" />
+          </item>
+          <item id="6e9837b8e3f84157973ae0e6d5e84828" cid="REL007" type="relationship" creation-date="02/22/2024 14:13:00" from="5aa06b36051f488b9d479b7faa9c8480" to="6cc139d42885419d9bf22a2527c051db" visibility="package">
+            <owned-items />
+            <relation from="5aa06b36051f488b9d479b7faa9c8480" to="6cc139d42885419d9bf22a2527c051db" derived="false">
+              <start-role id="umlar-90250922-4d8a-4b5f-8cb4-67c1151a94ce" name="" navigability="" association-type="association" visibility="private" property-ref="3bee9f273a08466aa3646e1230c6568e" />
+              <end-role id="umlar-af413468-8930-4d94-ae4f-6f3d6c271e1d" name="" navigability="" association-type="association" visibility="private" property-ref="f0a23ea7bde8413ea6d1d0cd29d43e13" />
             </relation>
           </item>
-          <item id="b0df3f7a31d040dcb2598def6d6cdc55" cid="PROP022" type="property" name="largo" owner="7be77bc823824e2bb304d036557f23b6" creator="" creation-date="02/22/2024 13:50:50" visibility="private">
+          <item id="f1b0c8e672f0470da9660ebb3d1db587" cid="PROP023" type="property" name="ancho" owner="7be77bc823824e2bb304d036557f23b6" creator="" creation-date="02/22/2024 13:53:20" visibility="private">
             <structural-feature type="BigReal" type-id="Uml.BigReal" />
+          </item>
+          <item id="57978852ea3541bcab90d5650deb5af7" cid="PROP027" type="property" name="horaFin" owner="6cc139d42885419d9bf22a2527c051db" creation-date="02/22/2024 14:01:17" visibility="private">
+            <structural-feature type="Time" type-id="Time" />
+          </item>
+          <item id="9d2cc37c5d764d169fb5d6f83053402b" cid="PROP024" type="property" name="fechaInicio" owner="6cc139d42885419d9bf22a2527c051db" creation-date="02/22/2024 14:00:07" visibility="private">
+            <structural-feature type="Date" type-id="Date" />
+          </item>
+          <item id="45488dc98a9b421eb8855db439dffd5b" cid="PROP026" type="property" name="fechaFin" owner="6cc139d42885419d9bf22a2527c051db" creation-date="02/22/2024 14:00:51" visibility="private">
+            <structural-feature type="Date" type-id="Date" />
+          </item>
+          <item id="0476ffc1b4024a5ca911160f7e38da07" cid="REL008" type="relationship" creation-date="02/29/2024 14:34:44" from="b800591e508e45a987f4a3200ed0e3ba" to="6cc139d42885419d9bf22a2527c051db" visibility="package">
+            <owned-items />
+            <relation from="b800591e508e45a987f4a3200ed0e3ba" to="6cc139d42885419d9bf22a2527c051db" derived="false">
+              <start-role id="umlar-11d36c36-aa66-4182-8c4b-b98fafb68932" name="" navigability="" association-type="association" visibility="private" property-ref="86fcc96ae863494b8b793f74b9426fec" />
+              <end-role id="umlar-605f94e0-2145-4764-8582-53b72534a5ae" name="" navigability="" association-type="association" visibility="private" property-ref="a2f2ad857fe64f43831889501a32f244" />
+            </relation>
           </item>
           <item id="b51b5d104a454e80af2c6e6d431f7f45" cid="ELEM003" type="constraint-connector" creation-date="02/22/2024 14:08:56" from="7be77bc823824e2bb304d036557f23b6" to="e577750394f94056948d4fd2c666c19e" visibility="package" />
           <item id="3a6c9bdda880448290dc981cf1167445" cid="CMT002" type="comment" creator="" creation-date="02/22/2024 13:41:44">
@@ -326,6 +373,10 @@ El rombo se pone del lado del conjunto.
 Rombo blanco: (Agregación):
 Si se elimina el conjunto, los elementos del conjunto (Son independientes existencialmete) y pueden pasar a ser parte de otro conjunto 
 Rombo negro: Se llama composición : si se elimin a el conjunto las partes se eliminan junto con el conjunto </comment>
+          </item>
+          <item id="a9a0933d2f554783b0606c064bef51b1" cid="PROP020" type="property" name="letra:Char" owner="7be77bc823824e2bb304d036557f23b6" creator="" creation-date="02/22/2024 13:50:32" visibility="private" />
+          <item id="511d244936004488911571aa9dddb3b4" cid="CMT001" type="comment" creator="" creation-date="02/22/2024 13:41:29">
+            <comment />
           </item>
           <item id="5aa06b36051f488b9d479b7faa9c8480" cid="C001" type="class" name="Carro" creator="" creation-date="02/22/2024 13:33:20" visibility="undefined">
             <owned-items />
@@ -337,14 +388,34 @@ Rombo negro: Se llama composición : si se elimin a el conjunto las partes se el
               <source-code language="ActionScript" />
             </source-codes>
           </item>
-          <item id="57978852ea3541bcab90d5650deb5af7" cid="PROP027" type="property" name="horaFin" owner="6cc139d42885419d9bf22a2527c051db" creation-date="02/22/2024 14:01:17" visibility="private">
-            <structural-feature type="Time" type-id="Time" />
+          <item id="ef48e21754484efe874ea1a02bfce72f" cid="PROP036" type="property" name="codigo" owner="b800591e508e45a987f4a3200ed0e3ba" creation-date="02/29/2024 14:33:26" visibility="private">
+            <structural-feature type="long" type-id="long" />
           </item>
-          <item id="f1b0c8e672f0470da9660ebb3d1db587" cid="PROP023" type="property" name="ancho" owner="7be77bc823824e2bb304d036557f23b6" creator="" creation-date="02/22/2024 13:53:20" visibility="private">
+          <item id="b0df3f7a31d040dcb2598def6d6cdc55" cid="PROP022" type="property" name="largo" owner="7be77bc823824e2bb304d036557f23b6" creator="" creation-date="02/22/2024 13:50:50" visibility="private">
             <structural-feature type="BigReal" type-id="Uml.BigReal" />
           </item>
-          <item id="45488dc98a9b421eb8855db439dffd5b" cid="PROP026" type="property" name="fechaFin" owner="6cc139d42885419d9bf22a2527c051db" creation-date="02/22/2024 14:00:51" visibility="private">
-            <structural-feature type="Date" type-id="Date" />
+          <item id="6cc139d42885419d9bf22a2527c051db" cid="C004" type="class" name="Registro" creation-date="02/22/2024 13:59:49" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a99b5f7ceda104809bb915310c870b154311" cid="PROP024" name="fechaInicio" creation-date="02/22/2024 14:00:07" property-ref="9d2cc37c5d764d169fb5d6f83053402b" />
+              <attribute id="a466fdfb2bd014beb8bcbb430eae2eb46228" cid="PROP025" name="horaInicio" creation-date="02/22/2024 14:00:37" property-ref="d71d106690ed486e9ab84cf8b41932d4" />
+              <attribute id="a35ed417287244490a57e8827df753e4c868" cid="PROP026" name="fechaFin" creation-date="02/22/2024 14:00:51" property-ref="45488dc98a9b421eb8855db439dffd5b" />
+              <attribute id="a5d5a1e55fd164ad3a179a4822f94ed07524" cid="PROP027" name="horaFin" creation-date="02/22/2024 14:01:17" property-ref="57978852ea3541bcab90d5650deb5af7" />
+              <attribute id="ab1613788c36c4dfd8c7ac089050e8c2f116" cid="PROP028" name="valor" creation-date="02/22/2024 14:01:35" property-ref="fdd797d013014dee82d73e789298ee8e" />
+            </attributes>
+          </item>
+          <item id="73dee6d162874c669d3592eed8d8af00" cid="REL006" type="relationship" creation-date="02/22/2024 14:02:00" from="7be77bc823824e2bb304d036557f23b6" to="6cc139d42885419d9bf22a2527c051db" visibility="package">
+            <owned-items />
+            <relation from="7be77bc823824e2bb304d036557f23b6" to="6cc139d42885419d9bf22a2527c051db" derived="false">
+              <start-role id="umlar-181e76d2-e50e-4de6-a41c-f48e96b3095c" name="" navigability="" association-type="association" visibility="private" property-ref="22d3b69dc8b14edda0597296e2b66ee3" />
+              <end-role id="umlar-533d679c-6953-4a26-85ff-d60f089e3289" name="" navigability="" association-type="association" visibility="private" property-ref="b71235b25b754f4db5367dc7b318ea4b" />
+            </relation>
+          </item>
+          <item id="d71d106690ed486e9ab84cf8b41932d4" cid="PROP025" type="property" name="horaInicio" owner="6cc139d42885419d9bf22a2527c051db" creation-date="02/22/2024 14:00:37" visibility="private">
+            <structural-feature type="Time" type-id="Time" />
+          </item>
+          <item id="2f187a0861ce447b92e265b54298d818" cid="PROP035" type="property" name="nombre" owner="b800591e508e45a987f4a3200ed0e3ba" creation-date="02/29/2024 14:33:25" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
           </item>
           <item id="40282e8979a948e7b421727aa62bc561" cid="C002" type="class" name="Cliente" creator="" creation-date="02/22/2024 13:34:36" visibility="undefined">
             <owned-items />
@@ -363,70 +434,27 @@ Rombo negro: Se llama composición : si se elimin a el conjunto las partes se el
               <source-code language="ActionScript" />
             </source-codes>
           </item>
-          <item id="6cc139d42885419d9bf22a2527c051db" cid="C004" type="class" name="Registro" creation-date="02/22/2024 13:59:49">
-            <owned-items />
-            <attributes>
-              <attribute id="a99b5f7ceda104809bb915310c870b154311" cid="PROP024" name="fechaInicio" creation-date="02/22/2024 14:00:07" property-ref="9d2cc37c5d764d169fb5d6f83053402b" />
-              <attribute id="a466fdfb2bd014beb8bcbb430eae2eb46228" cid="PROP025" name="horaInicio" creation-date="02/22/2024 14:00:37" property-ref="d71d106690ed486e9ab84cf8b41932d4" />
-              <attribute id="a35ed417287244490a57e8827df753e4c868" cid="PROP026" name="fechaFin" creation-date="02/22/2024 14:00:51" property-ref="45488dc98a9b421eb8855db439dffd5b" />
-              <attribute id="a5d5a1e55fd164ad3a179a4822f94ed07524" cid="PROP027" name="horaFin" creation-date="02/22/2024 14:01:17" property-ref="57978852ea3541bcab90d5650deb5af7" />
-              <attribute id="ab1613788c36c4dfd8c7ac089050e8c2f116" cid="PROP028" name="valor" creation-date="02/22/2024 14:01:35" property-ref="fdd797d013014dee82d73e789298ee8e" />
-            </attributes>
-          </item>
           <item id="fdd797d013014dee82d73e789298ee8e" cid="PROP028" type="property" name="valor" owner="6cc139d42885419d9bf22a2527c051db" creation-date="02/22/2024 14:01:35" visibility="private">
             <structural-feature type="BigReal" type-id="Uml.BigReal" />
-          </item>
-          <item id="d71d106690ed486e9ab84cf8b41932d4" cid="PROP025" type="property" name="horaInicio" owner="6cc139d42885419d9bf22a2527c051db" creation-date="02/22/2024 14:00:37" visibility="private">
-            <structural-feature type="Time" type-id="Time" />
-          </item>
-          <item id="7be77bc823824e2bb304d036557f23b6" cid="C003" type="class" name="Cupo" creator="" creation-date="02/22/2024 13:50:05" visibility="undefined">
-            <owned-items />
-            <attributes>
-              <attribute id="a6e20f32f0c97423daf31c90319e16d9a431" cid="PROP020" name="letra:Char" creation-date="02/22/2024 13:50:32" property-ref="a9a0933d2f554783b0606c064bef51b1" />
-              <attribute id="a61afe1c0bb5b4908b4ab3658bfa00f9c239" cid="PROP022" name="largo" creation-date="02/22/2024 13:50:50" property-ref="b0df3f7a31d040dcb2598def6d6cdc55" />
-              <attribute id="a6ec7f1fd815f4c8b855e43b05db1bf84928" cid="PROP023" name="ancho" creation-date="02/22/2024 13:53:20" property-ref="f1b0c8e672f0470da9660ebb3d1db587" />
-            </attributes>
-            <source-codes>
-              <source-code language="ActionScript" />
-            </source-codes>
-          </item>
-          <item id="511d244936004488911571aa9dddb3b4" cid="CMT001" type="comment" creator="" creation-date="02/22/2024 13:41:29">
-            <comment />
-          </item>
-          <item id="6e9837b8e3f84157973ae0e6d5e84828" cid="REL007" type="relationship" creation-date="02/22/2024 14:13:00" from="5aa06b36051f488b9d479b7faa9c8480" to="6cc139d42885419d9bf22a2527c051db" visibility="package">
-            <owned-items />
-            <relation from="5aa06b36051f488b9d479b7faa9c8480" to="6cc139d42885419d9bf22a2527c051db" derived="false">
-              <start-role id="umlar-3a0fb3ea-80ba-4831-bf60-e892a87994d5" name="" navigability="" association-type="association" visibility="private" property-ref="3bee9f273a08466aa3646e1230c6568e" />
-              <end-role id="umlar-e54bae19-54ae-4226-93eb-93dc12df0656" name="" navigability="" association-type="association" visibility="private" property-ref="f0a23ea7bde8413ea6d1d0cd29d43e13" />
-            </relation>
-          </item>
-          <item id="5d74d380e1a24f78977a5ddef91b1493" cid="PROP010" type="property" name="misCarros" owner="40282e8979a948e7b421727aa62bc561" creator="" creation-date="02/22/2024 13:37:32" visibility="private">
-            <structural-feature type="List&lt;Carro&gt;" type-id="List&lt;Carro&gt;" />
           </item>
           <item id="5a2f6e3dc2604df7aa9fbdab3bfd289a" cid="REL004" type="relationship" creator="" creation-date="02/22/2024 13:45:56" from="40282e8979a948e7b421727aa62bc561" to="5aa06b36051f488b9d479b7faa9c8480" visibility="package">
             <owned-items />
             <relation from="40282e8979a948e7b421727aa62bc561" to="5aa06b36051f488b9d479b7faa9c8480" derived="false">
-              <start-role id="umlar-1beb5340-4220-436b-beb7-0ad337ed44d0" name="" navigability="" association-type="aggregation" visibility="private" property-ref="14a32d7788d44e249726ebb53fb5661b" />
-              <end-role id="umlar-6142b207-0f01-445e-87d5-5da4fa55069e" name="" navigability="" association-type="association" visibility="private" attribute-ref="a40c24780d225404bbdcc2bcf9a6be0d382" property-ref="ab7355b9d32d4c7cb5908532de6a665a" />
+              <start-role id="umlar-5038ff4c-9296-4ff1-941d-e884407dda45" name="" navigability="" association-type="aggregation" visibility="private" property-ref="14a32d7788d44e249726ebb53fb5661b" />
+              <end-role id="umlar-2fc80907-b636-4b0a-b15f-f2e310a348e1" name="" navigability="" association-type="association" visibility="private" attribute-ref="a40c24780d225404bbdcc2bcf9a6be0d382" property-ref="ab7355b9d32d4c7cb5908532de6a665a" />
             </relation>
           </item>
-          <item id="a9a0933d2f554783b0606c064bef51b1" cid="PROP020" type="property" name="letra:Char" owner="7be77bc823824e2bb304d036557f23b6" creator="" creation-date="02/22/2024 13:50:32" visibility="private" />
-          <item id="9d2cc37c5d764d169fb5d6f83053402b" cid="PROP024" type="property" name="fechaInicio" owner="6cc139d42885419d9bf22a2527c051db" creation-date="02/22/2024 14:00:07" visibility="private">
-            <structural-feature type="Date" type-id="Date" />
-          </item>
-          <item id="e577750394f94056948d4fd2c666c19e" cid="CMT003" type="comment" creation-date="02/22/2024 14:06:08">
-            <comment>Rol de clases (asociacion)
--Frase verbal
--en tiempo presente
--minusculas
--tiene maximo 3 palabras
-Sirve para especificar el papel en la entidad en la relacion binaria
-</comment>
+          <item id="b800591e508e45a987f4a3200ed0e3ba" cid="C006" type="class" name="Empleado" creation-date="02/29/2024 14:33:07">
+            <owned-items />
+            <attributes>
+              <attribute id="af24b30d6c12146f3b2901accfb478b7c382" cid="PROP035" name="nombre" creation-date="02/29/2024 14:33:25" property-ref="2f187a0861ce447b92e265b54298d818" />
+              <attribute id="a3f30b6b1a348424ab0af701f3e39cded971" cid="PROP036" name="codigo" creation-date="02/29/2024 14:33:26" property-ref="ef48e21754484efe874ea1a02bfce72f" />
+            </attributes>
           </item>
         </abstract-items>
         <layer id="fdc64df4e52441e0bea328d158cdcac3" name="Default" visible="true" enabled="true" locked="false">
           <item id="5aa06b36051f488b9d479b7faa9c8480" iid="6d50520bcb2c4b4881e0ffadc5c7df16" show-fields="true" creation-date="02/22/2024 13:33:20" order-index="0" type="entity">
-            <layout ax="968" ay="153" awidth="140" aheight="160" x="968" y="153" width="140" height="160" />
+            <layout ax="948" ay="153" awidth="140" aheight="160" x="948" y="153" width="140" height="160" />
             <classifier />
             <class />
           </item>
@@ -439,10 +467,10 @@ Sirve para especificar el papel en la entidad en la relacion binaria
             <layout ax="50.5" ay="106" awidth="407" aheight="179" x="50.5" y="106" width="407" height="100" rotation-center="-78.5,0" />
           </item>
           <item id="5a2f6e3dc2604df7aa9fbdab3bfd289a" iid="ae3e4160f2294e6481e84133f93cf511" creation-date="02/22/2024 13:45:56" order-index="4" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="804" y1="233" x2="968" y2="230" start-border-pos="0.875" end-border-pos="0.8796875" start-local-pos="80" end-local-pos="77" name-position="0,20">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="804" y1="233" x2="948" y2="230" start-border-pos="0.875" end-border-pos="0.8796875" start-local-pos="80" end-local-pos="77" name-position="0,20">
               <points>
                 <point x="804" y="233" />
-                <point x="968" y="230" />
+                <point x="948" y="230" />
               </points>
             </layout>
             <relation from="40282e8979a948e7b421727aa62bc561" from-iid="0cf1e78892044296942e44674adbd477" to="5aa06b36051f488b9d479b7faa9c8480" to-iid="6d50520bcb2c4b4881e0ffadc5c7df16" to-field="a40c24780d225404bbdcc2bcf9a6be0d382" />
@@ -453,15 +481,15 @@ Sirve para especificar el papel en la entidad en la relacion binaria
             <class />
           </item>
           <item id="6cc139d42885419d9bf22a2527c051db" iid="4e6e8f8621c243bca182f3115c5ae9df" show-fields="true" creation-date="02/22/2024 13:59:49" order-index="6" type="entity">
-            <layout ax="916" ay="428.5" awidth="140" aheight="160" x="916" y="428.5" width="140" height="160" />
+            <layout ax="892" ay="428.5" awidth="140" aheight="160" x="892" y="428.5" width="140" height="160" />
             <classifier />
             <class />
           </item>
           <item id="73dee6d162874c669d3592eed8d8af00" iid="970e657edada416794b959c2bf8cc6a3" creation-date="02/22/2024 14:02:00" order-index="7" type="relation">
-            <layout start-role-position="61,16" end-role-position="60,20" start-multiplicity-position="25,-15" end-multiplicity-position="31,-17" line-style="oblique" lock-to-fields="false" auto-path="" x1="723" y1="508" x2="916" y2="508" start-border-pos="0.37421875" end-border-pos="0.87578125" name-position="0,20">
+            <layout start-role-position="61,16" end-role-position="60,20" start-multiplicity-position="25,-15" end-multiplicity-position="31,-17" line-style="oblique" lock-to-fields="false" auto-path="" x1="723" y1="508" x2="892" y2="508" start-border-pos="0.37421875" end-border-pos="0.87578125" name-position="0,20">
               <points>
                 <point x="723" y="508" />
-                <point x="916" y="508" />
+                <point x="892" y="508" />
               </points>
             </layout>
             <relation from="7be77bc823824e2bb304d036557f23b6" from-iid="3571f6e13cb34460964cd1d46723505b" to="6cc139d42885419d9bf22a2527c051db" to-iid="4e6e8f8621c243bca182f3115c5ae9df" />
@@ -479,14 +507,28 @@ Sirve para especificar el papel en la entidad en la relacion binaria
             <relation from="7be77bc823824e2bb304d036557f23b6" from-iid="3571f6e13cb34460964cd1d46723505b" to="e577750394f94056948d4fd2c666c19e" to-iid="8e581d45e5a9434ab3e2e960e670d7fe" />
           </item>
           <item id="6e9837b8e3f84157973ae0e6d5e84828" iid="6435cbc2c66246129e975463535fb6df" creation-date="02/22/2024 14:13:00" order-index="10" type="relation">
-            <layout start-role-position="29.08015,55.08698" end-role-position="25.70572,32.67078" start-multiplicity-position="9.523211,-38.16171" end-multiplicity-position="10.78265,-34.23292" line-style="oblique" lock-to-fields="false" auto-path="" x1="1024" y1="313" x2="1002" y2="428" start-border-pos="0.65077874319894" end-border-pos="0.15316903250558" name-position="4,1">
+            <layout start-role-position="29.08015,55.08698" end-role-position="25.70572,32.67078" start-multiplicity-position="9.523211,-38.16171" end-multiplicity-position="10.78265,-34.23292" line-style="oblique" lock-to-fields="false" auto-path="" x1="1019" y1="313" x2="995" y2="428" start-border-pos="0.623941802978516" end-border-pos="0.183163234165737" name-position="29,0">
               <points>
-                <point x="1024" y="313" />
-                <point x="1013.5" y="366" />
-                <point x="1002" y="428" />
+                <point x="1019" y="313" />
+                <point x="1019" y="368" />
+                <point x="995" y="428" />
               </points>
             </layout>
             <relation from="5aa06b36051f488b9d479b7faa9c8480" from-iid="6d50520bcb2c4b4881e0ffadc5c7df16" to="6cc139d42885419d9bf22a2527c051db" to-iid="4e6e8f8621c243bca182f3115c5ae9df" />
+          </item>
+          <item id="b800591e508e45a987f4a3200ed0e3ba" iid="0ae9ffc323dd45d8aa134274d5c7b0ac" show-fields="true" creation-date="02/29/2024 14:33:07" order-index="11" type="entity">
+            <layout ax="1174" ay="428.5" awidth="140" aheight="160" x="1174" y="428.5" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="0476ffc1b4024a5ca911160f7e38da07" iid="ced2b081db4c41419ba621ca776e9f61" creation-date="02/29/2024 14:34:44" order-index="12" type="relation">
+            <layout start-role-position="35,15" end-role-position="50,18" start-multiplicity-position="37,-15" end-multiplicity-position="25,-17" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1174" y1="508" x2="1032" y2="508" start-border-pos="0.87578125" end-border-pos="0.37421875" start-local-pos="79.5" end-local-pos="79.5" name-position="0,20">
+              <points>
+                <point x="1174" y="508" />
+                <point x="1032" y="508" />
+              </points>
+            </layout>
+            <relation from="b800591e508e45a987f4a3200ed0e3ba" from-iid="0ae9ffc323dd45d8aa134274d5c7b0ac" to="6cc139d42885419d9bf22a2527c051db" to-iid="4e6e8f8621c243bca182f3115c5ae9df" />
           </item>
         </layer>
       </diagram>
